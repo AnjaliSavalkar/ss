@@ -1,0 +1,46 @@
+# ----------------------------------------------------------------------
+# 1. Dependencies (Node.js)
+# ----------------------------------------------------------------------
+# Ignore 'node_modules' in the root, backend, and frontend directories
+**/node_modules
+.yarn-integrity
+.pnp.*
+
+# ----------------------------------------------------------------------
+# 2. Environment Variables & Secrets
+# ----------------------------------------------------------------------
+# CRITICAL: Do not commit sensitive files with API keys/passwords
+.env
+.env.local
+.env.*.local
+# UNLESS you want to include an example file showing the required variables
+# !.env.example
+
+# ----------------------------------------------------------------------
+# 3. Build & Compiled Artifacts
+# ----------------------------------------------------------------------
+# Frontend build directories (React, Vue, etc.)
+/frontend/build
+/frontend/dist
+/frontend/out
+
+# TypeScript cache files
+*.tsbuildinfo
+
+# ----------------------------------------------------------------------
+# 4. Logs, Caches, & Debugging
+# ----------------------------------------------------------------------
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+/logs/
+.eslintcache
+.cache
+
+# ----------------------------------------------------------------------
+# 5. IDE & Operating System Files
+# ----------------------------------------------------------------------
+.DS_Store # macOS
+Thumbs.db # Windows
+.vscode/* # Visual Studio Code folder
+# !.vscode/settings.json # Uncomment if you want to share specific settings
